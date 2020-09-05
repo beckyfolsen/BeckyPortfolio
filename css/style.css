@@ -20,8 +20,10 @@ html, body {
 
 .navbar{
   position: fixed;
+  top: 0px;
   background-color: white;
   width: 100%;
+  z-index: 1000;
 }
 
 .bg{
@@ -58,12 +60,11 @@ html, body {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
   position: relative;
   margin: auto;
   display: flex;
   align-items: center;
-  min-height: 371px;
+  min-height: 420px;
 }
 
 /* Hide the images by default */
@@ -168,7 +169,24 @@ html, body {
   margin-bottom: 5%;
 }
 
+.prev, .next, a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+.prev, .next, a{
+  color: black;
+}
+
 /*end carousel*/
+
+/*about page*/
+
+.card{
+  width: 90%;
+  margin: 0 auto;
+}
+
 
 footer{
   display: flex;
@@ -186,4 +204,16 @@ footer{
 
 footer p{
     text-align: center;
+}
+
+@media only screen and (min-width: 900px) {
+  .card{
+    width: 90%;
+    min-height: 470px;
+  }
+
+  .card-body{
+    max-width: 750px;
+    margin: 0 auto;
+  }
 }
