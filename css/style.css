@@ -1,12 +1,13 @@
 body{
   font-family: 'Raleway', sans-serif;
-  background-image: url(../images/bg-pattern.jpg);
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 html, body {
   height: 100%;
+}
+
+.active{
+  color: #132130;
 }
 
 .topSpace{
@@ -15,7 +16,7 @@ html, body {
 
 .large{
   font-size: 5rem;
-  color: #17a2b8;
+  color: #132130;
 }
 
 .navbar{
@@ -34,8 +35,11 @@ html, body {
 
 .jumbotron{
   background-color: transparent;
-  padding: 8rem 2rem;
+  padding: 4rem 2rem;
   color: white;
+}
+.display-4, .lead{
+  text-align: right;
 }
 
 .full-height{
@@ -51,7 +55,26 @@ html, body {
 }
 
 .chevron a{
-  color: #17a2b8;
+  color: black;
+}
+
+.container-fluid{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.card{
+  margin: 4rem auto;
+      border: 0px;
+}
+
+.btn-info{
+  background-color: #132130;
+  border-color: #132130;
+}
+
+.btn-info:hover{
+  background-color: #9678AC;
 }
 
 /*carousel*/
@@ -190,34 +213,67 @@ html, body {
 
 footer{
   display: flex;
-  justify-content: center;
-  align-items: center;
-
+  flex-direction: column;
+  align-items: flex-start;
   margin-top: 5%;
-  height: 5rem;
+  min-height: 5rem;
   color: white;
-  background-color: #17a2b8;
+  background-color: #132130;
   width:100%;
   margin: 0 auto;
   text-align: center;
+  padding: 4rem;
 }
 
-footer p{
-    text-align: center;
+footer ul li{
+  float: left;
+  list-style: none;
+  margin-right: 1em;
 }
 
-@media only screen and (min-width: 900px) {
+footer ul{
+  padding-inline-start: 0px;
+}
+
+.fab, .fas{
+  color: white;
+}
+
+.fa-chevron-down{
+  color: #132130;
+}
+
+@media only screen and (min-width: 768px) {
+  .bg{
+    background-image: url(../images/hero-tablet.png);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .display-4, .lead{
+    text-align: left;
+  }
 
   .bg{
     background-image: url(../images/hero-desktop.jpg);
   }
+
+  .jumbotron{
+    padding: 8rem 2rem;
+  }
   .card{
     width: 90%;
     min-height: 470px;
+    max-width: 70%;
   }
 
   .card-body{
-    max-width: 750px;
-    margin: 0 auto;
+  }
+
+  .left{
+    display: inline-block;
+  }
+  .right{
+    float: right;
   }
 }
