@@ -186,7 +186,7 @@ html, body {
   to {opacity: 1}
 }
 
-.mySlides img{
+.rec-img{
   width: 100px;
   height: 100px;
   margin-bottom: 5%;
@@ -207,9 +207,57 @@ html, body {
 
 .card{
   width: 90%;
-  margin: 0 auto;
+  margin: 4rem auto;
 }
 
+.pic{
+  margin-top: 4rem;
+}
+
+/*dimarco*/
+
+.dimarco{
+  color: black;
+}
+
+.dimarco img{
+  width: 80%;
+}
+
+.width{
+  width: 40%;
+}
+
+.circle{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin: 2rem;
+}
+
+.gold{
+    background-color: #d1b36c;
+}
+.blue{
+    background-color: #0c1620;
+}
+
+.black{
+    background-color: #000;
+}
+.white{
+    background-color: #fff;
+    border: 1px solid gray;
+}
+
+.sketch-img{
+  width: 100%;
+  height: 100%;
+}
+
+.d-logos{
+  width: 80%;
+}
 
 footer{
   display: flex;
