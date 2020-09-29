@@ -213,7 +213,8 @@ h4{
 /*end carousel*/
 
 .webd-img {
-  width: 100%;
+  max-width: 100%;
+  
 }
 
 .brand-img{
