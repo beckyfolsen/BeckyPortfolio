@@ -1,3 +1,3 @@
 # Becky Olsen Portfolio
-UX Design Manager
+UX Designer
 Rochester, NY
